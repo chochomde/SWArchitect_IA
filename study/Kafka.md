@@ -120,8 +120,8 @@
 - 메시지 처리 과정
   - Producer가 Broker로 메시지를 보냄
   - Broker내 Exchange(메시지 교환기)에서 해당하는 key에 맞게 큐에 분배함 (Binding 또는 Routing)
-    - topic 모드 : Routing Key가 정확히 일치하는 Queue에 메시지 전송 (Unicast)
-    - direct 모드 : Routing Key 패턴이 일치하는 Queue에 메시지 전송 (Multicast)
+    - direct 모드 : Routing Key가 정확히 일치하는 Queue에 메시지 전송 (Unicast)
+    - topic 모드 : Routing Key 패턴이 일치하는 Queue에 메시지 전송 (Multicast)
     - headers 모드 : [Key:Value]로 이루어진 header값을 기준으로 일치하는 Queue에 메시지 전송 (Multicast)
     - fanout 모드 : 해당 Exchange에 등록된 모든 Queue에 메시지 전송 (Broadcast)
   - Consumer가 해당 Queue에서 메시지를 받는다
